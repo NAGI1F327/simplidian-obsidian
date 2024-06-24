@@ -1,0 +1,910 @@
+/* 
+"Sample" Theme version 0.0.1
+by Nagi🌧
+*/
+
+/* Color Scheme Variables */
+:root {
+  --background-primary-light: #f5f5f5;
+  --background-secondary-light: #ececec;
+  --text-normal-light: #333333;
+  --text-faint-light: #aaaaaa;
+  --h1-color-light: #111e4b;
+  --h2-color-light: #0f79b3;
+  --h3-color-light: #c01363;
+  --h4-color-light: #61c9a8;
+  --h5-color-light: #edb88c;
+  --h6-color-light: #333333;
+  --text-accent-light: #333333;
+  --text-main-accent-light: #c01363;
+  --text-sub-accent-light: #61c9a8;
+  --text-mark-bg-light: #a81209;
+  --text-mark-color-light: #f5f5f5;
+  --scroll-bar-color-light: #c1c1c1;
+  --scroll-bar-hover-color-light: #a81209;
+  --file-bg-active-light: #333333;
+  --file-color-active-light: #dedede;
+  --table-th-color-light: #a81209;
+  --table-border-light: #c1c1c1;
+  --codeblock-text-light: #333333;
+  --hashtag-color-light: #c01363;
+  --code-bg-color-light: #f5f5f5;
+  --code-border-color-light: #e1e4e8;
+  --code-text-color-light: #24292e;
+  --code-keyword-color-light: #d73a49;
+  --code-string-color-light: #032f62;
+  --code-comment-color-light: #6a737d;
+  --code-function-color-light: #6f42c1;
+  --code-variable-color-light: #e36209;
+  --code-constant-color-light: #005cc0;
+  --code-type-color-light: #005cc5;
+
+  --background-primary-dark: #05090a;
+  --background-secondary-dark: #010708;
+  --text-normal-dark: #f5f5f5;
+  --text-faint-dark: #aaaaaa;
+  --h1-color-dark: #4c8a9e;
+  --h2-color-dark: #729ea4;
+  --h3-color-dark: #96aa96;
+  --h4-color-dark: #c5c999;
+  --h5-color-dark: #e5e9c7;
+  --h6-color-dark: #e6e6e6;
+  --text-main-accent-dark: #aaad8e;
+  --text-sub-accent-dark: #828e82;
+  --text-mark-bg-dark: #aaad8e;
+  --text-mark-color-dark: #0c1418;
+  --scroll-bar-color-dark: #4c8a9e;
+  --scroll-bar-hover-color-dark: #c5c999;
+  --file-bg-active-dark: #aaad8e;
+  --file-color-active-dark: #010708;
+  --table-th-color-dark: #aaad8e;
+  --table-border-dark: #444444;
+  --codeblock-text-dark: #f5f5f5;
+  --hashtag-color-dark: #c5c999;
+  --code-bg-color-dark: #0d1117;
+  --code-border-color-dark: #444c56;
+  --code-text-color-dark: #c9d1d9;
+  --code-keyword-color-dark: #f47067;
+  --code-string-color-dark: #96c7ff;
+  --code-comment-color-dark: #768390;
+  --code-function-color-dark: #dcbdfb;
+  --code-variable-color-dark: #f69d50;
+  --code-constant-color-dark: #6cb6ff;
+  --code-type-color-dark: #ffffff;
+
+  --red: #ff0000;
+  --blue: #0593d3;
+  --green: #009a87;
+  --violet: #6164c6;
+  --cyan: #47fefb;
+  --comment: #53AB67;
+}
+
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.green {
+  color: var(--green);
+}
+.violet {
+  color: var(--violet);
+}
+.cyan {
+  color: var(--cyan);
+}
+.comment {
+  color: var(--comment);
+}
+
+/* Theme Light */
+body.theme-light,
+body.is-mobile.theme-light {
+  color-scheme: light;
+  --background-primary: var(--background-primary-light);
+  --background-secondary: var(--background-secondary-light);
+  --text-normal: var(--text-normal-light);
+  --text-faint: var(--text-faint-light);
+  --h1-color: var(--h1-color-light);
+  --h2-color: var(--h2-color-light);
+  --h3-color: var(--h3-color-light);
+  --h4-color: var(--h4-color-light);
+  --h5-color: var(--h5-color-light);
+  --h6-color: var(--h6-color-light);
+  --text-accent: var(--text-accent-light);
+  --text-main-accent: var(--text-main-accent-light);
+  --text-sub-accent: var(--text-sub-accent-light);
+  --text-mark-bg: var(--text-mark-bg-light);
+  --text-mark-color: var(--text-mark-color-light);
+  --scroll-bar-color: var(--scroll-bar-color-light);
+  --scroll-bar-hover-color: var(--scroll-bar-hover-color-light);
+  --file-bg-active: var(--file-bg-active-light);
+  --file-color-active: var(--file-color-active-light);
+  --table-th-color: var(--table-th-color-light);
+  --table-border: var(--table-border-light);
+  --hashtag-color: var(--hashtag-color-light);
+  --code-keyword-color: var(--code-bg-color-light);
+  --code-border-color: var(--code-border-color-light);
+  --code-text-color: var(--code-text-color-light);
+  --code-keyword-color: var(--code-keyword-color-light);
+  --code-string-color: var(--code-string-color-light);
+  --code-comment-color: var(--code-comment-color-light);
+  --code-function-color: var(--code-function-color-light);
+  --code-variable-color: var(--code-variable-color-light);
+  --code-constant-color: var(--code-constant-color-light);
+  --code-type-color: var(--code-type-color-light);
+}
+
+/* Theme Dark */
+body.theme-dark,
+body.is-mobile.theme-dark {
+  color-scheme: dark;
+  --background-primary: var(--background-primary-dark);
+  --background-secondary: var(--background-secondary-dark);
+  --text-normal: var(--text-normal-dark);
+  --text-faint: var(--text-faint-dark);
+  --h1-color: var(--h1-color-dark);
+  --h2-color: var(--h2-color-dark);
+  --h3-color: var(--h3-color-dark);
+  --h4-color: var(--h4-color-dark);
+  --h5-color: var(--h5-color-dark);
+  --h6-color: var(--h6-color-dark);
+  --text-main-accent: var(--text-main-accent-dark);
+  --text-sub-accent: var(--text-sub-accent-dark);
+  --text-mark-bg: var(--text-mark-bg-dark);
+  --text-mark-color: var(--text-mark-color-dark);
+  --scroll-bar-color: var(--scroll-bar-color-dark);
+  --scroll-bar-hover-color: var(--scroll-bar-hover-color-dark);
+  --file-bg-active: var(--file-bg-active-dark);
+  --file-color-active: var(--file-color-active-dark);
+  --table-th-color: var(--table-th-color-dark);
+  --table-border: var(--table-border-dark);
+  --hashtag-color: var(--hashtag-color-dark);
+  --code-keyword-color: var(--code-bg-color-dark);
+  --code-border-color: var(--code-border-color-dark);
+  --code-text-color: var(--code-text-color-dark);
+  --code-keyword-color: var(--code-keyword-color-dark);
+  --code-string-color: var(--code-string-color-dark);
+  --code-comment-color: var(--code-comment-color-dark);
+  --code-function-color: var(--code-function-color-dark);
+  --code-variable-color: var(--code-variable-color-dark);
+  --code-constant-color: var(--code-constant-color-dark);
+  --code-type-color: var(--code-type-color-dark);
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+  .nav-file-title.is-active {
+      background-color: var(--file-bg-active) !important;
+  }
+
+  .nav-file-title.is-active .nav-file-title-content {
+      color: var(--file-color-active) !important;
+  }
+
+  .nav-file-title-content,
+  body {
+      color: var(--text-normal);
+  }
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  .nav-file-title.is-active {
+      background-color: var(--file-bg-active) !important;
+  }
+
+  .nav-file-title.is-active .nav-file-title-content {
+      color: var(--file-color-active) !important;
+  }
+
+  .nav-file-title:hover {
+      background-color: var(--file-bg-active) !important;
+  }
+
+  .nav-file-title-content {
+        color: var(--file-color-active) !important;
+  }
+  
+  .nav-file-title-content,
+  body {
+      color: var(--text-normal);
+  }
+}
+
+
+/*--------------------*/
+/* This is for me ><! */
+/*--------------------*/
+.star::before {
+  content: '★';
+  color: #ffc400;
+  font-family: "Uhbee Heeyom";
+}
+
+.markred {
+  background-color: var(--red);
+  color: #f5f5f5 !important; 
+}
+.markblue {
+  background-color: var(--blue);
+  color: #f5f5f5 !important; 
+}
+.markgreen {
+  background-color: var(--green);
+  color: #f5f5f5 !important; 
+}
+.markviolet {
+  background-color: var(--violet);
+  color: #f5f5f5 !important; 
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/********************************************************************** 
+____ _  _ ____ ___ ____ _  _ _ ____ ____ 
+|    |  | [__   |  |  | |\/| | [__  |___ 
+|___ |__| ___]  |  |__| |  | | ___] |___ 
+
+**********************************************************************/ 
+
+/*------------------------*/
+/* General Heading Styles */
+/*------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1; 
+  margin: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.markdown-preview-section h1, .markdown-preview-view h1, .cm-header-1 { 
+  color: var(--h1-color); 
+  font-size: 30px;
+}
+
+.markdown-preview-section h2, .markdown-preview-view h2, .cm-header-2 { 
+  color: var(--h2-color); 
+  font-size: 26px;
+}
+
+.markdown-preview-section h3, .markdown-preview-view h3, .cm-header-3 { 
+  color: var(--h3-color); 
+  font-size: 22px;
+}
+
+.markdown-preview-section h4, .markdown-preview-view h4, .cm-header-4 { 
+  color: var(--h4-color); 
+  font-size: 18px;
+}
+
+.markdown-preview-section h5, .markdown-preview-view h5, .cm-header-5 {
+  color: var(--h5-color); 
+  font-size: 15px;
+}
+.markdown-preview-section h6, .markdown-preview-view h6, .cm-header-6 { 
+  color: var(--h6-color); 
+  font-size: 15px;
+}
+
+
+/*------------------------*/
+/* Horizontal Rule Styles */
+/*------------------------*/
+.cm-line hr,
+.markdown-preview-view hr {
+  margin-block-start: 4em;
+  margin-block-end: 4em;
+  border: none; 
+  height: 0;
+}
+
+.cm-line hr::after,
+.markdown-preview-view hr::after {
+  content: '. . . . .';
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  color: var(--text-mark-bg);
+  background-color: var(--background-primary);
+}
+
+
+/*----------------*/
+/* Listing Styles */
+/*----------------*/
+.cm-s-obsidian span.cm-formatting-list {
+  color: var(--text-mark-bg);
+}
+
+.markdown-preview-view ul li::marker,
+.markdown-preview-view ol li::marker {
+  color: var(--text-mark-bg);
+}
+
+
+/*--------------*/
+/* Table Styles */
+/*--------------*/
+body.theme-light table {
+  border: 1px solid #000000;
+  background-color: var(--background-primary);
+  color: #000000;
+}
+
+body.theme-light table th, 
+body.theme-light table td {
+  border: 1px solid var(--table-border);
+}
+
+body.theme-light table th {
+  background-color: var(--table-th-color) !important;
+  color: var(--background-primary);
+  text-align: center; 
+  font-weight: normal;
+}
+
+body.theme-dark table {
+  border: 1px solid #d3d4d5;
+  background-color: var(--background-primary);
+  color: #f5f5f5;
+}
+
+body.theme-dark table th, 
+body.theme-dark table td {
+  border: 1px solid var(--table-border);
+}
+
+body.theme-dark table th {
+  background-color: var(--table-th-color) !important;
+  color: var(--background-primary);
+  text-align: center;
+  font-weight: normal;
+}
+
+.markdown-preview-view table {
+  border-collapse: collapse;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  text-align: left;
+}
+
+
+/*---------------*/
+/* Hashtag Style */
+/*---------------*/
+.cm-s-obsidian span.cm-hashtag, .cm-s-obsidian span.cm-hashtag-begin,
+.cm-s-obsidian span.cm-hashtag.cm-link, .cm-s-obsidian span.cm-hashtag-begin.cm-link,
+.markdown-preview-view .tag, .markdown-preview-view .cm-hashtag,
+.markdown-preview-view .tag.cm-link, .markdown-preview-view .cm-hashtag.cm-link {
+  color: var(--hashtag-color) !important;
+}
+
+
+/*-------------*/  
+/* Links Style */
+/*-------------*/  
+a,
+.internal-link,
+.cm-hmd-internal-link,
+.cm-link,
+.cm-url,
+.cm-formatting-image {
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-color-scheme: light) {
+  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+  .internal-link,
+  .external-link {
+      color: var(--text-normal);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 5px 5px;
+      text-decoration: none;
+      transition: background 350ms ease-in-out;
+      background-image: linear-gradient(to bottom, var(--text-main-accent) 0%, var(--text-main-accent) 100%);
+  }
+
+  .cm-s-obsidian span.cm-formatting-link {
+      color: #ffffff !important;
+      opacity: 0.25;
+  }
+  
+  .external-link {
+      padding: 0;
+  }
+  
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+  .internal-link {
+      background-image: linear-gradient(to bottom, var(--text-sub-accent) 0%, var(--text-sub-accent) 100%);
+  }
+  
+  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+  .external-link:hover,
+  .internal-link:hover,
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+      color: #fff;
+      background-size: 4px 50px;
+  }
+  
+  a:hover {
+      text-decoration: none !important;
+      color: var(--text-normal);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline,
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+  .internal-link,
+  .external-link {
+      color: var(--text-normal);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 5px 5px;
+      text-decoration: none;
+      transition: background 350ms ease-in-out;
+      background-image: linear-gradient(to bottom, var(--text-main-accent) 0%, var(--text-main-accent) 100%);
+  }
+
+  .cm-s-obsidian span.cm-formatting-link {
+      color: #ffffff !important;
+      opacity: 0.25;
+  }
+
+  .external-link {
+      padding: 0;
+  }
+
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
+  .internal-link {
+      background-image: linear-gradient(to bottom, var(--text-sub-accent) 0%, var(--text-sub-accent) 100%);
+  }
+
+  .cm-s-obsidian span.cm-link:not(.cm-formatting-link) .cm-underline:hover,
+  .external-link:hover,
+  .internal-link:hover,
+  .cm-s-obsidian span.cm-hmd-internal-link .cm-underline:hover {
+      color: #fff;
+      background-size: 4px 50px;
+  }
+
+  a:hover {
+      text-decoration: none !important;
+      color: var(--text-normal);
+  }
+}
+
+
+/*-------------------------*/
+/* Webkit Scrollbar Styles */
+/*-------------------------*/
+::-webkit-scrollbar {
+  visibility: hidden;
+  background-color: transparent;
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar-color) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-bar-hover-color) !important;
+}
+
+
+/*---------------------*/
+/* Presentation Styles */
+/*---------------------*/
+.reveal .slide-background-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-primary); 
+}
+  
+.reveal .slides>section {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear;
+}
+
+.reveal .slides>section.present {
+  visibility: visible;
+  opacity: 1;
+}
+
+.reveal {
+  font-size: 1em;
+  font-family: ONE Mobile Title; /* I strongly recommend it */
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal table {
+  font-size: 1em;
+}
+
+.reveal h1 {
+  color: var(--h1-color);
+  font-size: 4em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal h2 {
+  color :var(--h2-color);
+  font-size: 3em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal h3 {
+  color: var(--h3-color);
+  font-size: 2em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal h4 {
+  color: var(--h4-color);
+  font-size: 1.5em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal h5 {  
+  color: var(--h5-color);
+  font-size: 1.5em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal h6 {
+  color: var(--h6-color);
+  font-size: 1.5em;
+  font-family: ONE Mobile Title;
+}
+
+.reveal p {
+  font-size: 1.5em;
+}
+
+.reveal ul {
+  font-size: 19.5px;
+  line-height: 1.7;
+} 
+
+.reveal pre {
+  font-size: 1em;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.reveal .slides table {
+width: 100%; 
+max-width: 90%; 
+height: auto;
+font-size: 20px; 
+border-collapse: collapse;
+border-bottom: 1px solid var(--table-border);
+}
+
+.reveal .slides th, .reveal .slides td {
+border: 1px solid var(--table-border)
+}
+
+.reveal .slides th {
+background-color: var(--table-th-color);
+}
+
+
+/********************************************************************** 
+____ ____ ___  ____ ___  _    ____ ____ _  _ 
+|    |  | |  \ |___ |__] |    |  | |    |_/  
+|___ |__| |__/ |___ |__] |___ |__| |___ | \_ 
+
+**********************************************************************/
+/* I am planning to revise this part while updating skin.:)*/
+
+/* Light Theme */
+body.theme-light .markdown-preview-view pre,
+body.theme-light .cm-s-default pre {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #c1c1c1 !important; 
+  border-radius: 4px !important; 
+  padding: 10px !important; 
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+}
+
+body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+  background-color: #f5f5f5 !important;
+}
+
+body.theme-light .markdown-preview-view code,
+body.theme-light .cm-s-default code {
+  background-color: #f5f5f5 !important;
+  border-radius: 4px !important; 
+  padding: 10px !important; 
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+}
+
+/* Dark Theme */
+body.theme-dark .markdown-preview-view pre,
+body.theme-dark .cm-s-default pre {
+  background-color: #0d1117 !important; 
+  border: 1px solid #444444 !important; 
+  border-radius: 4px !important; 
+  padding: 10px !important;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+}
+
+body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+  background-color: #0d1117 !important; 
+}
+
+body.theme-dark .markdown-preview-view code,
+body.theme-dark .cm-s-default code {
+  background-color: #0d1117 !important; 
+  border-radius: 4px !important; 
+  padding: 10px !important;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+}
+
+.theme-light .cm-s-obsidian .cm-comment {
+  color: var(--code-comment-color);
+}
+
+.theme-light .cm-s-obsidian .cm-keyword {
+  color: var(--code-keyword-color);
+}
+
+.theme-light .cm-s-obsidian .cm-string {
+  color: var(--code-string-color);
+}
+
+.theme-light .cm-s-obsidian .cm-variable {
+  color: var(--code-variable-color);
+}
+
+.theme-light .cm-s-obsidian .cm-constant {
+  color: var(--code-constant-color);
+}
+
+.theme-light .cm-s-obsidian .cm-function {
+  color: var(--code-function-color);
+}
+
+.theme-light .cm-s-obsidian .cm-type {
+  color: var(--code-type-color);
+}
+
+/* Specific for C */
+.theme-light .cm-s-obsidian .cm-meta {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-keyword {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-def {
+  color: #6f42c1;
+}
+
+.theme-light .cm-s-obsidian .cm-atom {
+  color: #005cc5;
+}
+
+.theme-light .cm-s-obsidian .cm-number {
+  color: #005cc5;
+}
+
+/* Specific for C++ */
+.theme-light .cm-s-obsidian .cm-meta {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-keyword {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-def {
+  color: #6f42c1;
+}
+
+.theme-light .cm-s-obsidian .cm-atom {
+  color: #005cc5;
+}
+
+.theme-light .cm-s-obsidian .cm-number {
+  color: #005cc5;
+}
+
+/* Specific for Java */
+.theme-light .cm-s-obsidian .cm-meta {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-keyword {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-def {
+  color: #6f42c1;
+}
+
+.theme-light .cm-s-obsidian .cm-atom {
+  color: #005cc5;
+}
+
+.theme-light .cm-s-obsidian .cm-number {
+  color: #005cc5;
+}
+
+/* Specific for Python */
+.theme-light .cm-s-obsidian .cm-keyword {
+  color: #d73a49;
+}
+
+.theme-light .cm-s-obsidian .cm-string {
+  color: #032f62; 
+}
+
+.theme-light .cm-s-obsidian .cm-variable {
+  color: #e36209;
+}
+
+.theme-light .cm-s-obsidian .cm-builtin {
+  color: #6f42c1;
+}
+
+.theme-light .cm-s-obsidian .cm-number {
+  color: #005cc5;
+}
+
+.theme-dark .cm-s-obsidian .cm-comment {
+  color: var(--code-comment-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-keyword {
+  color: var(--code-keyword-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-string {
+  color: var(--code-string-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-variable {
+  color: var(--code-variable-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-constant {
+  color: var(--code-constant-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-function {
+  color: var(--code-function-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-type {
+  color: var(--code-type-color);
+}
+
+/* Specific for C */
+.theme-dark .cm-s-obsidian .cm-meta {
+  color: #f47067;
+}
+
+.theme-dark .cm-s-obsidian .cm-def {
+  color: #dcbdfb;
+}
+
+.theme-dark .cm-s-obsidian .cm-atom {
+  color: #6cb6ff; 
+}
+
+.theme-dark .cm-s-obsidian .cm-number {
+  color: #6cb6ff;
+}
+
+/* Specific for C++ */
+.theme-dark .cm-s-obsidian .cm-meta {
+  color: #f47067;
+}
+
+.theme-dark .cm-s-obsidian .cm-def {
+  color: #dcbdfb;
+}
+
+.theme-dark .cm-s-obsidian .cm-atom {
+  color: #6cb6ff;
+}
+
+.theme-dark .cm-s-obsidian .cm-number {
+  color: #6cb6ff;
+}
+
+/* Specific for Java */
+.theme-dark .cm-s-obsidian .cm-meta {
+  color: #f47067;
+}
+
+.theme-dark .cm-s-obsidian .cm-def {
+  color: #dcbdfb;
+}
+
+.theme-dark .cm-s-obsidian .cm-atom {
+  color: #6cb6ff;
+}
+
+.theme-dark .cm-s-obsidian .cm-number {
+  color: #6cb6ff;
+}
+
+/* Specific for Python */
+.theme-dark .cm-s-obsidian .cm-keyword {
+  color: #dcbdfb;
+}
+
+.theme-dark .cm-s-obsidian .cm-string {
+  color: #96c7ff;
+}
+
+.theme-dark .cm-s-obsidian .cm-variable {
+  color: #f69d50; 
+}
+
+.theme-dark .cm-s-obsidian .cm-builtin {
+  color: #dcbdfb; 
+}
+
+.theme-dark .cm-s-obsidian .cm-number {
+  color: #6cb6ff; 
+}
+
+/* Specific for other languages */
+.theme-dark .cm-s-obsidian .cm-keyword {
+  color: var(--code-keyword-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-string {
+  color: var(--code-string-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-variable {
+  color: var(--code-variable-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-builtin {
+  color: var(--code-function-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-number {
+  color: var(--code-constant-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-type {
+  color: var(--code-type-color);
+}
+
+.theme-dark .cm-s-obsidian .cm-comment {
+  color: var(--code-comment-color);
+}
