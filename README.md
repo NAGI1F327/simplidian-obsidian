@@ -24,3 +24,7 @@ Here is the URL: https://www.onestorecorp.com/en/sv/fordev_font/
 ## Simplidian Dark
 <img src=dark_theme.png>
 <img src=dark_theme_1.png>
+
+---
+
+wwcomms12@gmail.com
