@@ -11,16 +11,16 @@ Here is the URL: https://www.onestorecorp.com/en/sv/fordev_font/
 <br/><br/><br/>
 
 ## Simplidian theme
-![[theme.png]]
+<img src=theme.png>
 
 <br/><br/>
 
 ## Simplidian Light
-![[light_theme.png]]
-![[light_theme_1.png]]
+<img src=light_theme.png>
+<img src=light_theme_1.png>
 
 <br/><br/>
 
 ## Simplidian Dark
-![[dark_theme.png]]
-![[dark_theme_1.png]]
+<img src=dark_theme.png>
+<img src=dark_theme_1.png>
