@@ -440,12 +440,12 @@ a,
   .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
   .internal-link,
   .external-link {
-      color: var(--text-normal);
+      color: var(--text-normal) !important;
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 5px 5px;
       text-decoration: none;
-      transition: background 350ms ease-in-out;
+      transition: background 350ms ease-in-out !important;
       background-image: linear-gradient(to bottom, var(--text-main-accent) 0%, var(--text-main-accent) 100%);
   }
 
@@ -473,7 +473,7 @@ a,
   
   a:hover {
       text-decoration: none !important;
-      color: var(--text-normal);
+      color: #fff !important;
   }
 }
 
@@ -482,12 +482,12 @@ a,
   .cm-s-obsidian span.cm-hmd-internal-link .cm-underline,
   .internal-link,
   .external-link {
-      color: var(--text-normal);
+      color: var(--text-normal) !important;
       background-position: 0 100%;
       background-repeat: repeat-x;
       background-size: 5px 5px;
       text-decoration: none;
-      transition: background 350ms ease-in-out;
+      transition: background 350ms ease-in-out !important;
       background-image: linear-gradient(to bottom, var(--text-main-accent) 0%, var(--text-main-accent) 100%);
   }
 
@@ -515,7 +515,7 @@ a,
 
   a:hover {
       text-decoration: none !important;
-      color: var(--text-normal);
+      color: #fff !important;
   }
 }
 
