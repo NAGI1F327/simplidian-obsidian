@@ -450,7 +450,7 @@ a,
   }
 
   .cm-s-obsidian span.cm-formatting-link {
-      color: #ffffff !important;
+      color: var(--text-normal) !important;
       opacity: 0.25;
   }
   
