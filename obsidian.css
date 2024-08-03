@@ -12,8 +12,8 @@ by Nagi🌧
   --h1-color-light: #111e4b;
   --h2-color-light: #0f79b3;
   --h3-color-light: #c01363;
-  --h4-color-light: #61c9a8;
-  --h5-color-light: #edb88c;
+  --h4-color-light: #3cb38d;
+  --h5-color-light: #e29352;
   --h6-color-light: #333333;
   --text-accent-light: #333333;
   --text-main-accent-light: #c01363;
@@ -77,27 +77,10 @@ by Nagi🌧
   --green: #009a87;
   --violet: #6164c6;
   --cyan: #47fefb;
-  --comment: #53AB67;
+  --grey: #929292;
+  --brown: #6b3434;
 }
 
-.red {
-  color: var(--red);
-}
-.blue {
-  color: var(--blue);
-}
-.green {
-  color: var(--green);
-}
-.violet {
-  color: var(--violet);
-}
-.cyan {
-  color: var(--cyan);
-}
-.comment {
-  color: var(--comment);
-}
 
 /* Theme Light */
 body.theme-light,
@@ -220,25 +203,25 @@ body.is-mobile.theme-dark {
   }
 
   .nav-file-title.is-active {
-      background-color: var(--file-bg-active) !important; /* 활성화된 파일 배경색 */
+      background-color: var(--file-bg-active) !important; 
   }
 
   .nav-file-title.is-active .nav-file-title-content {
-      color: var(--file-color-active) !important; /* 활성화된 파일 텍스트 색상 */
+      color: var(--file-color-active) !important; 
   }
 
   .nav-file-title:hover {
-      background-color: var(--file-bg-hover) !important; /* 파일 호버 시 배경색 */
+      background-color: var(--file-bg-hover) !important; 
   }
 
   .nav-file-title-content {
-      color: var(--text-normal) !important; /* 일반 텍스트 색상 */
+      color: var(--text-normal) !important;
   }
 
   body {
       padding: 10px;
       font-size: 16px;
-      color: var(--text-normal) !important; /* 일반 텍스트 색상 */
+      color: var(--text-normal) !important;
   }
 }
 
@@ -255,18 +238,41 @@ body.is-mobile.theme-dark {
 .markred {
   background-color: var(--red);
   color: #f5f5f5 !important; 
+  font-weight: bold;
 }
 .markblue {
   background-color: var(--blue);
   color: #f5f5f5 !important; 
+  font-weight: bold;
 }
 .markgreen {
   background-color: var(--green);
   color: #f5f5f5 !important; 
+  font-weight: bold;
 }
 .markviolet {
   background-color: var(--violet);
   color: #f5f5f5 !important; 
+  font-weight: bold;
+}
+
+.red {
+  color: var(--red) !important;
+}
+.blue {
+  color: var(--blue) !important;
+}
+.green {
+  color: var(--green) !important;
+}
+.violet {
+  color: var(--violet) !important;
+}
+.brown {
+  color: var(--brown) !important;
+}
+.grey {
+  color: var(--grey) !important;
 }
 
 img {
@@ -305,21 +311,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .markdown-preview-section h3, .markdown-preview-view h3, .cm-header-3 { 
   color: var(--h3-color); 
-  font-size: 22px;
+  font-size: 23px;
 }
 
 .markdown-preview-section h4, .markdown-preview-view h4, .cm-header-4 { 
   color: var(--h4-color); 
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .markdown-preview-section h5, .markdown-preview-view h5, .cm-header-5 {
+  font-weight: 500;
   color: var(--h5-color); 
-  font-size: 15px;
+  font-size: 18px;
 }
+
 .markdown-preview-section h6, .markdown-preview-view h6, .cm-header-6 { 
+  font-weight: 500;
   color: var(--h6-color); 
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
@@ -379,7 +388,7 @@ body.theme-light table th {
   background-color: var(--table-th-color) !important;
   color: var(--background-primary);
   text-align: center; 
-  font-weight: normal;
+  font-weight: bold;
 }
 
 body.theme-dark table {
@@ -397,7 +406,7 @@ body.theme-dark table th {
   background-color: var(--table-th-color) !important;
   color: var(--background-primary);
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .markdown-preview-view table {
@@ -655,45 +664,31 @@ ____ ____ ___  ____ ___  _    ____ ____ _  _
 /* Light Theme */
 body.theme-light .markdown-preview-view pre,
 body.theme-light .cm-s-default pre {
+  font-family: GoormSansCode !important;
+  font-size: 16px;
   background-color: #f5f5f5 !important;
   border: 1px solid #c1c1c1 !important; 
   border-radius: 4px !important; 
-  padding: 10px !important; 
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
 }
 
 body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
   background-color: #f5f5f5 !important;
-}
-
-body.theme-light .markdown-preview-view code,
-body.theme-light .cm-s-default code {
-  background-color: #f5f5f5 !important;
-  border-radius: 4px !important; 
-  padding: 10px !important; 
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+  font-size: 14px;
 }
 
 /* Dark Theme */
 body.theme-dark .markdown-preview-view pre,
 body.theme-dark .cm-s-default pre {
+  font-family: GoormSansCode !important;
+  font-size: 16px;
   background-color: #0d1117 !important; 
   border: 1px solid #444444 !important; 
   border-radius: 4px !important; 
-  padding: 10px !important;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
 }
 
 body.theme-dark .cm-s-obsidian .HyperMD-codeblock {
   background-color: #0d1117 !important; 
-}
-
-body.theme-dark .markdown-preview-view code,
-body.theme-dark .cm-s-default code {
-  background-color: #0d1117 !important; 
-  border-radius: 4px !important; 
-  padding: 10px !important;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important; 
+  font-size: 14px;
 }
 
 .theme-light .cm-s-obsidian .cm-comment {
@@ -935,4 +930,8 @@ body.theme-dark .cm-s-default code {
 
 .theme-dark .cm-s-obsidian .cm-comment {
   color: var(--code-comment-color);
+}
+
+div[data-path$='.ini']{
+  display: none;
 }
