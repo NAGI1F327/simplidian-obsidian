@@ -381,6 +381,8 @@ body.theme-light table {
 
 body.theme-light table th, 
 body.theme-light table td {
+  text-align: center; 
+  vertical-align: middle;
   border: 1px solid var(--table-border);
 }
 
@@ -399,6 +401,8 @@ body.theme-dark table {
 
 body.theme-dark table th, 
 body.theme-dark table td {
+  vertical-align: middle;
+  text-align: center; 
   border: 1px solid var(--table-border);
 }
 
