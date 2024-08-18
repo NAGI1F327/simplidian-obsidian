@@ -157,7 +157,6 @@ body.is-mobile.theme-dark {
   --code-type-color: var(--code-type-color-dark);
 }
 
-
 /* Light Mode Styles */
 @media (prefers-color-scheme: light) {
   .nav-file-title.is-active {
@@ -240,19 +239,28 @@ body.is-mobile.theme-dark {
   color: #f5f5f5 !important; 
   font-weight: bold;
 }
+
 .markblue {
   background-color: var(--blue);
   color: #f5f5f5 !important; 
   font-weight: bold;
 }
+
 .markgreen {
   background-color: var(--green);
   color: #f5f5f5 !important; 
   font-weight: bold;
 }
+
 .markviolet {
   background-color: var(--violet);
   color: #f5f5f5 !important; 
+  font-weight: bold;
+}
+
+.markyellow {
+  background-color: #FFC000;
+  color: #333333 !important; 
   font-weight: bold;
 }
 
@@ -280,6 +288,77 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+s {
+    position: relative;
+    display: inline-block;
+    text-decoration-color: #FF0000;
+}
+
+u {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--green) !important;
+}
+
+.box {
+    border: 2px solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
+
+.redbox {
+    border: 2px solid #ff0000;;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
+
+.bluebox {
+    border: 2px solid #0593d3;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
+
+.greenbox {
+    border: 2px solid #009a87;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
+
+.violetbox {
+    border: 2px solid #6164c6;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
+
+.yellowbox {
+    border: 2px solid #FFC000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 2px;
+    border-radius: 321px;
+}
 
 /********************************************************************** 
 ____ _  _ ____ ___ ____ _  _ _ ____ ____ 
@@ -316,17 +395,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .markdown-preview-section h4, .markdown-preview-view h4, .cm-header-4 { 
   color: var(--h4-color); 
+
   font-size: 20px;
 }
 
 .markdown-preview-section h5, .markdown-preview-view h5, .cm-header-5 {
-  font-weight: 500;
   color: var(--h5-color); 
+
   font-size: 18px;
 }
 
 .markdown-preview-section h6, .markdown-preview-view h6, .cm-header-6 { 
-  font-weight: 500;
   color: var(--h6-color); 
   font-size: 18px;
 }
@@ -382,7 +461,7 @@ body.theme-light table {
 body.theme-light table th, 
 body.theme-light table td {
   text-align: center; 
-  vertical-align: middle;
+  vertical-align: middle !important;
   border: 1px solid var(--table-border);
 }
 
@@ -401,8 +480,8 @@ body.theme-dark table {
 
 body.theme-dark table th, 
 body.theme-dark table td {
-  vertical-align: middle;
   text-align: center; 
+  vertical-align: middle !important;
   border: 1px solid var(--table-border);
 }
 
